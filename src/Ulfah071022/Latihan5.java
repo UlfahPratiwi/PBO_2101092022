@@ -10,90 +10,33 @@ package Ulfah071022;
  * @author ASUS
  */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import javax.swing.JOptionPane;
 
 public class Latihan5 {
-    public static void main (String[] args){
+     public static void main (String[] args){
+        //JOptionPane
         
-        //BufferedReader
-        System.out.println("=== Program Membaca Bilangan ===");
-        BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
-      
-        int bil =0;
+        int nilai1=0;
+        int nilai2=0;
+        int nilai3=0;
+        float rata=0;
         String status = "";
-        String status2 = "";
         
-         try{
-            System.out.print("Masukkan Bilangan (1-10): ");
-            bil = Integer.parseInt(dataIn.readLine());
-            //if-else
-            if(bil==1){
-               status = "Satu"; 
-            }else if(bil==2){
-                status = "Dua";
-            }else if(bil==3){
-                status = "Tiga";
-            }else if(bil==4){
-                status = "Empat";
-            }else if(bil==5){
-                status = "Lima";
-            }else if(bil==6){
-                status = "Enam";
-            }else if(bil==7){
-                status = "Tujuh";
-            }else if(bil==8){
-                status = "Delapan";
-            }else if(bil==9){
-                status = "Sembilan";
-            }else if(bil==10){
-                status = "Sepuluh";
-            }else{
-                status = "Invalid Number";
-            }
-            
-           //switch
-            switch(bil){ 
-            case 1: 
-                    status2 = "Satu";
-                    break; 
-            case 2: 
-                    status2 = "Dua";
-                    break; 
-            case 3: 
-                    status2 = "Tiga";
-                    break;
-            case 4: 
-                    status2 = "Empat";
-                    break;
-            case 5: 
-                    status2 = "Lima";
-                    break;
-            case 6: 
-                    status2 = "Enam";
-                    break;
-            case 7: 
-                    status2 = "Tujuh";
-                    break;
-            case 8: 
-                    status2 = "Delapan";
-                    break;
-            case 9: 
-                    status2 = "Sembilan";
-                    break;
-            case 10: 
-                    status2 = "Sepuluh";
-                    break;
-            default: 
-                status2 = "Invalid Number";
-            }
-            
-        }catch(IOException e){
-            System.out.println("Error!");
-        }
+        nilai1 = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai 1 : "));
+        nilai2 = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai 2 : "));
+        nilai3 = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai 3 : "));
         
-        System.out.println(bil+" "+"adalah bilangan : "+status);
-        System.out.println(bil+" "+"adalah bilangan : "+status2);  
+        
+        
+        rata=(nilai1+nilai2+nilai3)/3;
+        if(rata>=60){
+               status = ":-)";
+           }else{
+               status = ":-(";
+           }
+        
+        JOptionPane.showMessageDialog(null, "Rata-rata : "+rata+" "+ status);
+        
+        
     }
 }
