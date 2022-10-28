@@ -17,7 +17,7 @@ public class Latihan6 {
         
         //if-else
         
-         String angka = "";
+        String angka = "";
         angka = JOptionPane.showInputDialog("Silahkan masukkan angka (1-10) : ");
         int n = Integer.valueOf(angka).intValue();
         
