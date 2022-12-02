@@ -11,7 +11,8 @@ package Ulfah021222;
  */
 public class BukuRecordExample {
      public static void main(String[] args){
-         
+        
+        // method constructor 
         BukuRecord buku1 = new BukuRecord("Ulfah" , "Padang Panjang" , "082384984501" , "ulfahpratiwi.bkt@gmail.com" );
         System.out.println("Nama                    :"+buku1.getName());
         System.out.println("Alamat                  :"+buku1.getAddress());
