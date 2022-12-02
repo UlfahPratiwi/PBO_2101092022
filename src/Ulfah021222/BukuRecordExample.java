@@ -13,6 +13,7 @@ public class BukuRecordExample {
      public static void main(String[] args){
         
         // method accessor dan mutator
+        
         System.out.println("== Entry Buku Alamat ==" + "\n");
         System.out.println("Accessor dan Mutator Method");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -31,8 +32,9 @@ public class BukuRecordExample {
         System.out.println("====================================================");
         
         // method constructor 
+        
         System.out.println("Constructor Method");
-         System.out.println("~~~~~~~~~~~~~~~~~~");
+        System.out.println("~~~~~~~~~~~~~~~~~~");
         BukuRecord buku2 = new BukuRecord("Ulfah" , "Padang Panjang" , "082384984501" , "ulfahpratiwi.bkt@gmail.com" );
         
         System.out.println("Nama                    :"+buku2.getName());
